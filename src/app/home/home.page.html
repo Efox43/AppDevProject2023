@@ -1,19 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Premier League
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
-  </div>
+    <h6 align="left" >Name: {{savedName}}</h6>
+    <h6 align="left" >Favourite Team: {{savedTeam}}</h6>
+ <ion-button [routerLink]="['/table']" routerDirection="forward">League Table</ion-button>
+ <ion-item-divider>
+</ion-item-divider>
+ <ion-button [routerLink]="['/player-stats']" routerDirection="forward">Player Stats</ion-button>
+ <ion-item-divider>
+</ion-item-divider>
+ <ion-button [routerLink]="['/create-account']" routerDirection="forward">Create Account</ion-button>
+ <ion-item-divider>
+</ion-item-divider>
+ <ion-button [routerLink]="['/account-details']" routerDirection="forward">Account Details</ion-button>
+
 </ion-content>

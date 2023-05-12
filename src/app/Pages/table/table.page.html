@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Table</ion-title>
+  </ion-toolbar>
+  <ion-back-button></ion-back-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let t of table" style="align-items: center;">
+
+    <ion-row>
+      <ion-col>{{t.Team}}</ion-col>
+      <ion-col>{{t.GamesPlayed}}</ion-col>
+      <ion-col>{{t.Wins}}</ion-col>
+      <ion-col>{{t.Defeats}}</ion-col>
+    </ion-row>
+    
+</ion-item>
+</ion-content>

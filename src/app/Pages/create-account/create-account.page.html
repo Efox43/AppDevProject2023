@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>createAccount</ion-title>
+  </ion-toolbar>
+  <ion-back-button></ion-back-button>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input label="Text input" placeholder="Enter name" value="" [(ngModel)]="name"></ion-input>
+
+  <ion-input label="Text input" placeholder="Enter nationality" value="" [(ngModel)]="nationality"></ion-input>
+
+  <ion-radio-group value="" [(ngModel)]="team">
+    <ion-radio value="Arsenal"></ion-radio><ion-label>   Arsenal</ion-label><br>
+    <ion-radio value="Aston Villa"></ion-radio><ion-label>   Aston Villa</ion-label><br>
+    <ion-radio value="Brighton"></ion-radio><ion-label>   Brighton</ion-label><br>
+    <ion-radio value="Chelsea"></ion-radio><ion-label>   Chelsea</ion-label><br>
+    <ion-radio value="Everton"></ion-radio><ion-label>   Everton</ion-label> <br>
+    <ion-radio value="Leeds Utd"></ion-radio><ion-label>   Leeds Utd</ion-label><br>
+    <ion-radio value="Liverpool"></ion-radio><ion-label>   Liverpool</ion-label> <br>
+    <ion-radio value="Man City"></ion-radio><ion-label>   Man City</ion-label><br>
+    <ion-radio value="Man Utd"></ion-radio><ion-label>   Man Utd</ion-label><br>
+  </ion-radio-group>
+ 
+  <ion-button style="margin: 20px;" (click)="onSave()">Save</ion-button>
+</ion-content>
